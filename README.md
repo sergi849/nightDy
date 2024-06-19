@@ -9,7 +9,7 @@ This script installs a dark theme for the Pterodactyl game server management pan
 2. Run the following command to download the script:
 
 ```bash
-bash <(curl https://raw.githubusercontent.com/mufniDev/nightDy/main/install.sh)
+bash <(curl https://raw.githubusercontent.com/sergi849/nightDy/main/install.sh)
 ```
 
 3. Follow the on-screen prompts to install the theme.
