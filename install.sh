@@ -15,7 +15,7 @@ installTheme(){
     echo "Memasang tema...tunggu ya"
     cd /var/www/pterodactyl
     rm -r nightDy
-    git clone https://github.com/mufniDev/nightDy.git
+    git clone https://github.com/sergi849/nightDy.git
     cd nightDy
     rm /var/www/pterodactyl/resources/scripts/mufniDev.css
     rm /var/www/pterodactyl/resources/scripts/index.tsx
@@ -50,7 +50,7 @@ installThemeQuestion(){
 
 # Fungsi untuk memperbaiki panel jika terjadi error pada saat menginstall theme
 repair(){
-    bash <(curl https://raw.githubusercontent.com/mufniDev/nightDy/main/repair.sh)
+    bash <(curl https://raw.githubusercontent.com/sergi849/nightDy/main/repair.sh)
 }
 
 # Fungsi untuk mengembalikan backup dari directory pterodactyl
@@ -75,10 +75,10 @@ echo "Discord:-"
 echo "GitHub: https://github.com/mufniDev"
 echo "Website: https://mufni.rf.gd"
 echo ""
-echo "[1] Pasang tema"
-echo "[2] Pulihkan backup"
-echo "[3] perbaiki panel (gunakan jika mengalami error)"
-echo "[4] Keluar"
+echo "[1] Poner Tema"
+echo "[2] Poner Backup"
+echo "[3] Reparar Panel (Para arreglar algun bug de instalación o error)"
+echo "[4] Cerrar"
 
 # Meminta user untuk memilih pilihan
 read -p "Mohon masukkan angka: " choice
