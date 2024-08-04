@@ -1,5 +1,5 @@
 if (( $EUID != 0 )); then
-    echo "Tolong jalankan sebagai root"
+    echo "Ejecute como root"
     exit
 fi
 
@@ -30,10 +30,10 @@ repairPanel(){
 }
 
 while true; do
-    read -p "Kamu beneran mau repair tema ini [y/n]? " yn
+    read -p "¿Quieres reparar este tema [y/n]? " yn
     case $yn in
         [Yy]* ) repairPanel; break;;
         [Nn]* ) exit;;
-        * ) echo "Tolong jawab y atau n.";;
+        * ) echo "Por favor responda y(sí) o n(no)";;
     esac
 done
